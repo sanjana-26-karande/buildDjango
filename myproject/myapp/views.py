@@ -24,3 +24,9 @@ def menu(request):
     </html>
     """
     return HttpResponse(html_content)
+
+from django.http import HttpResponse
+
+def home(request):
+    path = request.path  
+    return HttpResponse(path, content_type="text/plain", charset="utf-8")

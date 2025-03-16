@@ -5,5 +5,6 @@ urlpatterns = [
     path('say_hello/', views.hello, name='hello'),
     path('homepage/', views.homepage, name='homepage'),
     path('display_date/', views.display_date, name='display_date'),
-    path('menu/', views.menu, name='menu'),  # Maps to menu view
+    path('menu/', views.menu, name='menu'),  
+    path('main/home/', views.home, name='home')
 ]
